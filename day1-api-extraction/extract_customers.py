@@ -159,8 +159,6 @@ def to_dataframe(flat_users: list[dict]) -> pd.DataFrame:
                             ]
     
     df = pd.DataFrame(flat_users)
-    print(f"The shape of the dataframe {df.shape}")
-    print(f"the dtypes of the dataframe {df.info()}")
     
     # check the id is updated as customer_id
     if "id" in df.columns:
@@ -223,8 +221,6 @@ def main() -> None:
     saved_data_path = export_csv(df)
     print(f"Cleaned data exported to: {saved_data_path}")
     
-    
-    
-
+        
 if __name__ == "__main__":
     main()
