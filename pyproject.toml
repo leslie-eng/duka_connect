@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "flatten-json>=0.1.14",
     "pandas>=3.1.0",
     "requests>=2.34.2",
 ]

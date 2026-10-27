@@ -115,14 +115,28 @@ name = "duka-connect"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "flatten-json" },
     { name = "pandas" },
     { name = "requests" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "flatten-json", specifier = ">=0.1.14" },
     { name = "pandas", specifier = ">=3.1.0" },
     { name = "requests", specifier = ">=2.34.2" },
+]
+
+[[package]]
+name = "flatten-json"
+version = "0.1.14"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0f/14/e9b5e4a8dd7edccc9d0791c4ed2180e50b00ab4c19b07081308814dd4e68/flatten_json-0.1.14.tar.gz", hash = "sha256:4008b1bd81743e6fcdc29ddbb640f5c1589376116e0c8f36cb4a0003d41fe102", size = 7806, upload-time = "2023-10-27T17:20:54.562Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/63/b5/99f20a19b839e04fffab924be192681b797b40bcf83abdfa508371c6273c/flatten_json-0.1.14-py3-none-any.whl", hash = "sha256:75e455dbbb5be2431546024039cac094a8ed1dfedcf36ab1e7c9d01459fa410c", size = 7962, upload-time = "2023-10-27T17:20:40.455Z" },
 ]
 
 [[package]]
